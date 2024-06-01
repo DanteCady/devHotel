@@ -5,7 +5,7 @@ import { hotelRooms } from './components/hotelRooms';
 const App = () => {
     return (
         <div>
-          <Hotel hotelRooms={hotelRooms} />
+          <Hotel hotelRooms={hotelRooms} hotelName={hotelRooms.hotelName} />
         </div>
     );
 }

@@ -1,3 +1,10 @@
+export const hotelInfo= [
+ {
+    hotelName: 'Hotel California',
+    hotelLocation: 'California',
+ }   
+]
+
 export const hotelRooms = [
     {
         roomId: 1,

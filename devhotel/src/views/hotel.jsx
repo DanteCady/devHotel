@@ -1,9 +1,9 @@
 import React from "react";
 
-const Hotel = ({ hotelRooms }) => {
+const Hotel = ({ hotelRooms, hotelName }) => {
     return (
         <div>
-            <h1>Hotel Rooms</h1>
+            <h1>{hotelName}</h1>
             <table>
                 <thead>
                     <tr>
