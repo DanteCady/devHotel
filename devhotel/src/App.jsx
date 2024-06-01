@@ -1,11 +1,11 @@
 import React from 'react';
 import Hotel from './views/hotel';
-import { hotelRooms } from './components/hotelRooms';
+import { hotelRooms, hotelInfo } from './components/hotelRooms';
 
 const App = () => {
     return (
         <div>
-          <Hotel hotelRooms={hotelRooms} hotelName={hotelRooms.hotelName} />
+          <Hotel hotelRooms={hotelRooms} hotelName={hotelInfo.hotelName} />
         </div>
     );
 }
