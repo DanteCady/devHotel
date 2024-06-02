@@ -1,4 +1,5 @@
 import React from "react";
+import BookButton from "../components/bookButton";
 
 const Hotel = ({ hotelRooms, hotelName }) => {
     return (
@@ -18,8 +19,11 @@ const Hotel = ({ hotelRooms, hotelName }) => {
                         <tr key={room.roomId}>
                             <td>{room.roomId}</td>
                             <td>{room.roomType}</td>
-                            <td>{room.roomPrice}</td>
+                            <td>{room.roomPrice}$</td>
                             <td>{room.roomCapacity}</td>
+                            <td>
+                                <BookButton room={room} hotelName={hotelName} />
+                            </td>
                         </tr>
                     ))}
                 </tbody>
