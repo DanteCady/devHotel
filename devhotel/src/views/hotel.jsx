@@ -2,6 +2,7 @@ import React from "react";
 import BookButton from "../components/bookButton";
 
 const Hotel = ({ hotelRooms, hotelName }) => {
+
     return (
         <div>
             <h1>{hotelName}</h1>
@@ -22,7 +23,10 @@ const Hotel = ({ hotelRooms, hotelName }) => {
                             <td>{room.roomPrice}$</td>
                             <td>{room.roomCapacity}</td>
                             <td>
-                                <BookButton room={room} hotelName={hotelName} />
+                                <BookButton 
+                                room={room}
+                                 hotelName={hotelName}
+                                 />
                             </td>
                         </tr>
                     ))}
